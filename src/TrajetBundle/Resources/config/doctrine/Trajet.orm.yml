@@ -1,0 +1,84 @@
+TrajetBundle\Entity\Trajet:
+    type: entity
+    table: null
+    repositoryClass: TrajetBundle\Repository\TrajetRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        trajet10k1:
+            type: boolean
+            nullable: true
+        trajet10k2:
+            type: boolean
+            nullable: true
+        trajet10k3:
+            type: boolean
+            nullable: true
+        trajet10k4:
+            type: boolean
+            nullable: true
+        trajet20k1:
+            type: boolean
+            nullable: true
+        trajet20k2:
+            type: boolean
+            nullable: true
+        trajet20k3:
+            type: boolean
+            nullable: true
+        trajet20k4:
+            type: boolean
+            nullable: true
+        trajet30k1:
+            type: boolean
+            nullable: true
+        trajet30k2:
+            type: boolean
+            nullable: true
+        trajet30k3:
+            type: boolean
+            nullable: true
+        trajet30k4:
+            type: boolean
+            nullable: true
+        trajet40k1:
+            type: boolean
+            nullable: true
+        trajet40k2:
+            type: boolean
+            nullable: true
+        trajet40k3:
+            type: boolean
+            nullable: true
+        trajet40k4:
+            type: boolean
+            nullable: true
+        trajet50k1:
+            type: boolean
+            nullable: true
+        trajet50k2:
+            type: boolean
+            nullable: true
+        trajet50k3:
+            type: boolean
+            nullable: true
+        trajet50k4:
+            type: boolean
+            nullable: true
+        trajet60k1:
+            type: boolean
+            nullable: true
+        trajet60k2:
+            type: boolean
+            nullable: true
+        trajet60k3:
+            type: boolean
+            nullable: true
+        trajet60k4:
+            type: boolean
+            nullable: true
+    lifecycleCallbacks: {  }

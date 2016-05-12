@@ -1,0 +1,3 @@
+trajet_homepage:
+    path:     /
+    defaults: { _controller: TrajetBundle:Default:index }
