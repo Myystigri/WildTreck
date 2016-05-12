@@ -1,3 +1,7 @@
+login:
+    resource: "@LoginBundle/Resources/config/routing.yml"
+    prefix:   /
+
 trajet:
     resource: "@TrajetBundle/Resources/config/routing.yml"
     prefix:   /
