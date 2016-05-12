@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block navbar %}{% include 'navbar/navbar.html.twig' %}{% endblock %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+{% if error %}
+    <div class="alert-mess row">
+        <div class="alert alert-danger col-lg-offset-4 col-md-offset-4 col-lg-4 col-md-4">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    </div>
+{% endif %}
+<div class="row wrapp-login">
+<form class="form-login col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6" action="{{ path("fos_user_security_check") }}" method="post">
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">
+            <h2>Se connecter</h2>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">
+            <label for="username">{{ 'security.login.username'|trans }}</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input class="form-control" type="text" id="username" name="_username" value="{{ last_username }}" required="required" placeholder="Username"/>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">
+            <label for="password">{{ 'security.login.password'|trans }}</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input class="form-control" type="password" id="password" name="_password" required="required" placeholder="Mot de passe">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">
+            <div class="input-group">
+                <span class="input-group-addon">
+                <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                </span>
+                <label class="remember-me form-group" for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">
+            <input class="login btn btn-lg" type="submit" id="_submit" name="_submit" value={{ 'security.login.submit'|trans }} /><a href="{{ path('user_register') }}"><button type="button" class="btn btn-accueil">Rejoins nous !</button></a>
+        </div>
+    </div>
+</form>
+</div>
+{% endblock %}
+
