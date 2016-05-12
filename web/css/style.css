@@ -1,13 +1,13 @@
 
 
-/* FRED */
+			/* HOME */
 
 
 body {
 
 }
 .montagne {
-	background: url(../img/montagne.jpg);
+	background: url(../img/montagne2.jpg);
 	background-position: center;
 	background-size: cover;
 	height:100vh;
@@ -24,6 +24,42 @@ body {
 	background-repeat: no-repeat;
 	height: 150px;
 	margin-top: 300px;
-	margin-right: 200px;
+	margin-right: 00px;
 	
 }
+
+			/* VUE  */
+
+
+.haut-droit {
+	padding-top: 50px;
+	height: 50vh;
+	border:solid rgba(123,194,66,1) 1px;
+	border-radius: 10px;
+}
+.haut-gauche {
+	padding-top: 50px;
+	height: 50vh;
+	border:solid rgba(123,194,66,1) 1px;
+	border-radius: 10px;
+}
+.bas-gauche {
+	height: 50vh;
+	border:solid rgba(123,194,66,1) 1px;
+	border-radius: 10px;
+}
+.bas-droit {
+	
+	height: 50vh;
+	border:solid rgba(123,194,66,1) 1px;
+	border-radius: 10px;
+}
+.image-vue img {
+	height: 180px;
+	width: 306px;
+	border-radius: 10px;
+	float: left;
+	
+	
+}
+

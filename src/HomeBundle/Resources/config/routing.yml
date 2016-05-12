@@ -1,3 +1,7 @@
 home_homepage:
-    path:     /home
+    path:     /
     defaults: { _controller: HomeBundle:Default:index }
+
+home_vue:
+    path:     /vue
+    defaults: { _controller: HomeBundle:Default:vue }
