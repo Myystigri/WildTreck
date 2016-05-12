@@ -1,0 +1,29 @@
+
+
+/* FRED */
+
+
+body {
+
+}
+.montagne {
+	background: url(../img/montagne.jpg);
+	background-position: center;
+	background-size: cover;
+	height:100vh;
+}
+.rando {
+	background: url(../img/rando.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	margin-top: 300px;
+	margin-left: 200px;
+}
+.velo {
+	background: url(../img/velo.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	margin-top: 300px;
+	margin-right: 200px;
+	
+}
