@@ -3,9 +3,13 @@ home_homepage:
     defaults: { _controller: HomeBundle:Default:index }
 
 #DORIAN
-rando10k1:
+rando10k1vue:
     path:     /rando10k1
     defaults: { _controller: HomeBundle:Rando:rando10k1 }
+
+rando10k1:
+    path:     /rando10k1/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn }
 
 home_vue:
     path:     /vue
