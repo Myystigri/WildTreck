@@ -3,6 +3,13 @@
 namespace HomeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use AppBundle\Entity\User;
+use TrajetBundle\Entity\Trajets;
 
 class RandoController extends Controller
 {
@@ -15,16 +22,28 @@ class RandoController extends Controller
 		$em = $this->getDoctrine()->getManager();
 		$user = $this->container->get('security.context')->getToken()->getUser();
 
-		$isok = $em->getRepository('TrajetBundle:Trajet')->findOneByIdUser($user->getId());
-
-		$isok->setTrajet1(true);
+		$isok = $em->getRepository('TrajetBundle:Trajets')->findOneByIdUser($user->getId());
+		//$isok = new Trajets();
+		$isok->setTrajet10k1(true);
+		$userid = $user -> getId();
+		$isok->setIdUser($userid);
+		// $repository = $this->getDoctrine()->getRepository('TrajetBundle:Trajets');
+		// $trajets = $repository->findOneById_user($userid);
 
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando10k1');
+		$url = $this -> generateUrl('rando10k1vue');
 		$response = new RedirectResponse($url);
 		return $response;
+
+
+		// $url = $this -> generateUrl('user_messagerie');
+		// $response = new RedirectResponse($url);
+		// return $response;
+
+
+
 
     }
 }

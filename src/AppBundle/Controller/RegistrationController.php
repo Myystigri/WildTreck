@@ -21,6 +21,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use FOS\UserBundle\Model\UserInterface;
+use TrajetBundle\Entity\Trajets;
 
 /**
  * Controller managing the registration
@@ -66,6 +67,16 @@ class RegistrationController extends Controller
             }
 
             $dispatcher->dispatch(FOSUserEvents::REGISTRATION_COMPLETED, new FilterUserResponseEvent($user, $request, $response));
+
+            $em = $this->getDoctrine()->getManager();
+            $isok = $em->getRepository('TrajetBundle:Trajets')->findOneByIdUser($user->getId());
+            $user = $this->container->get('security.context')->getToken()->getUser();
+            $isok = new Trajets();
+            $userid = $user -> getId();
+            $isok->setIdUser($userid);
+
+            $em->persist($isok);
+            $em->flush();
 
             return $response;
         }
