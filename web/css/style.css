@@ -12,6 +12,12 @@ body {
 	background-size: cover;
 	height:100vh;
 }
+.pelouse {
+	background: url(../img/pelouse.jpg);
+	background-position: center;
+	background-size: cover;
+	height:100vh;
+}
 .rando {
 	background-repeat: no-repeat;
 	height: 150px;
@@ -182,6 +188,7 @@ body {
 }
 .btn-inscription {
 
+
 	margin-left: 100px;
 	display: flex;
 	justify-content: space-around;
@@ -233,6 +240,10 @@ body {
 }
 .grossimage {
 	margin-top:100px;
+	border-radius: 5px;
+}
+.grossimage img {
+	border-radius: 5px;
 }
 .description {
 	margin-top:50px;
