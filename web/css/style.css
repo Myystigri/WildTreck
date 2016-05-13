@@ -181,12 +181,8 @@ body {
 	background: -o-linear-gradient(#fff, #999);
 }
 .btn-inscription {
-<<<<<<< HEAD
-
-=======
 	margin-left: 100px;
 	display: flex;
->>>>>>> 94092408fdc316f17b6ce52cddda07dc71f9dc2d
 	justify-content: space-around;
 	align-items: center;
 }
@@ -199,7 +195,13 @@ body {
 
 #avatar {
     margin-top: 100px;
-    width: 100%;
+    width: 100px;
+    height:100px;	
+}
+.col-md-4 img {
+	height:250px;
+	width:250px;
+	margin-top: 50px;
 }
 
 .username {
@@ -240,5 +242,7 @@ body {
 .description {
 	margin-top:50px;
 }
+
+.succes {
 
 }
