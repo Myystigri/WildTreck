@@ -91,6 +91,7 @@ body {
 
 /* Nico */
 
+/*PopUp*/
 .modalmarche {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
@@ -188,6 +189,23 @@ body {
 }
 }
 
+/*page profile*/
+
+#avatar {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.username {
+    font-size: 50px;
+    margin-top: 20%;
+}
+
+#logo {
+    height:100%;
+    width: 100%;
+}
+
 
 
 /* DORIAN */
@@ -215,4 +233,6 @@ body {
 }
 .description {
 	margin-top:50px;
+}
+
 }
