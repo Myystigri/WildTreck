@@ -49,6 +49,7 @@ rando10k2vue:
     path:     /rando10k2
     defaults: { _controller: HomeBundle:Rando:rando10k2 }
 
+
 rando30k1:
     path:     /rando30k1/envoie
     defaults: {_controller: HomeBundle:Rando:modifybtn30k1 }
@@ -112,5 +113,14 @@ rando40k4:
 rando40k4vue:
     path:     /rando40k4
     defaults: { _controller: HomeBundle:Rando:rando40k4 }
+
+
+rando50k1:
+    path:     /rando50k1/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn50k1 }
+
+rando50k1vue:
+    path:     /rando50k1
+    defaults: { _controller: HomeBundle:Rando:rando50k1 }
 
 

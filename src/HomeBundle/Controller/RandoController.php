@@ -303,14 +303,14 @@ class RandoController extends Controller
         // return $response;
     }
 
-}
 
-public function rando40k4Action()
+
+    public function rando40k4Action()
 {
     return $this->render('HomeBundle:rando:rando40k4.html.twig');
 }
 
-public function modifybtn40k4Action(Request $request)
+    public function modifybtn40k4Action(Request $request)
 {
     $em = $this->getDoctrine()->getManager();
     $user = $this->container->get('security.context')->getToken()->getUser();
@@ -334,4 +334,37 @@ public function modifybtn40k4Action(Request $request)
     // $url = $this -> generateUrl('user_messagerie');
     // $response = new RedirectResponse($url);
     // return $response;
+
+}
+    public function rando50k1Action()
+    {
+        return $this->render('HomeBundle:rando:rando50k1.html.twig');
+    }
+    public function modifybtn50k1Action(Request $request)
+    {
+		$em = $this->getDoctrine()->getManager();
+		$user = $this->container->get('security.context')->getToken()->getUser();
+
+		$isok = $em->getRepository('TrajetBundle:Trajets')->findOneByIdUser($user->getId());
+		//$isok = new Trajets();
+		$isok->setTrajet50k1(true);
+		$userid = $user -> getId();
+		$isok->setIdUser($userid);
+		// $repository = $this->getDoctrine()->getRepository('TrajetBundle:Trajets');
+		// $trajets = $repository->findOneById_user($userid);
+
+		$em->persist($isok);
+		$em->flush();
+
+		$url = $this -> generateUrl('rando50k1vue');
+		$response = new RedirectResponse($url);
+		return $response;
+
+
+		// $url = $this -> generateUrl('user_messagerie');
+		// $response = new RedirectResponse($url);
+		// return $response;
+
+
+    }
 }
