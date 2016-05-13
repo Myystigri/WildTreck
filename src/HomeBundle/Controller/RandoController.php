@@ -34,7 +34,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando10k1vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
@@ -67,7 +67,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando10k2vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
@@ -98,7 +98,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando10k3vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -131,7 +131,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando10k4vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -164,7 +164,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando20k1vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -197,7 +197,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando20k2vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -230,7 +230,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando20k3vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -263,7 +263,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando20k4vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -330,7 +330,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando30k2vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
@@ -362,7 +362,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando30k3vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
@@ -394,7 +394,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando30k4vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
@@ -426,7 +426,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando40k1vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
@@ -459,7 +459,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando40k2vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
@@ -491,7 +491,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando40k3vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
@@ -524,7 +524,7 @@ class RandoController extends Controller
     $em->persist($isok);
     $em->flush();
 
-    $url = $this->generateUrl('rando40k4vue');
+    $url = $this->generateUrl('home_homepage');
     $response = new RedirectResponse($url);
     return $response;
 
@@ -554,7 +554,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando50k1vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -585,7 +585,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando50k2vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -618,7 +618,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando50k3vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -651,7 +651,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando50k4vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -684,7 +684,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando60k1vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -717,7 +717,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando60k2vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -750,7 +750,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando60k3vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
@@ -783,7 +783,7 @@ class RandoController extends Controller
 		$em->persist($isok);
 		$em->flush();
 
-		$url = $this -> generateUrl('rando60k4vue');
+		$url = $this -> generateUrl('home_homepage');
 		$response = new RedirectResponse($url);
 		return $response;
 
