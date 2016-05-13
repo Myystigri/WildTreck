@@ -167,8 +167,11 @@ body {
     font-size: 50px;
     margin-top: 20%;
 }
-}
 
+#logo {
+    height:100%;
+    width: 100%;
+}
 
 
 
@@ -197,4 +200,6 @@ body {
 }
 .description {
 	margin-top:50px;
+}
+
 }
