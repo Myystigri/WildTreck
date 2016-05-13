@@ -178,10 +178,13 @@ body {
 	background: -o-linear-gradient(#fff, #999);
 }
 .btn-inscription {
-
+	margin-left: 100px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+.carre {
+	text-align: center;
 }
 }
 
