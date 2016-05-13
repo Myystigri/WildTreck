@@ -12,6 +12,12 @@ body {
 	background-size: cover;
 	height:100vh;
 }
+.pelouse {
+	background: url(../img/pelouse.jpg);
+	background-position: center;
+	background-size: cover;
+	height:100vh;
+}
 .rando {
 	background-repeat: no-repeat;
 	height: 150px;
@@ -181,12 +187,11 @@ body {
 	background: -o-linear-gradient(#fff, #999);
 }
 .btn-inscription {
-<<<<<<< HEAD
-	margin-left: 100px;
-=======
 
-	margin-left: 130px;
->>>>>>> f43286d1d8459853614d3b66728e33ac1e950ae1
+	margin-left: 100px;
+
+
+	margin-left: 100px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -243,6 +248,10 @@ body {
 }
 .grossimage {
 	margin-top:100px;
+	border-radius: 5px;
+}
+.grossimage img {
+	border-radius: 5px;
 }
 .description {
 	margin-top:50px;
