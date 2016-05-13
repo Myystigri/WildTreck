@@ -21,6 +21,7 @@ body {
 .rando {
 	background-repeat: no-repeat;
 	height: 150px;
+    margin-top: 55px;
 	
 }
 .rando img {
@@ -32,6 +33,7 @@ body {
 .velo {
 	background-repeat: no-repeat;
 	height: 150px;
+    margin-top: 55px;
 		
 }
 .velo img {
