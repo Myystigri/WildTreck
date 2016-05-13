@@ -4,93 +4,105 @@
 
 
 {% block body %}
+
+      
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
-                <img id="avatar" src="{{ asset ('img/avatar2.png') }}"/>
+             <img id="avatar" src="{{ asset ('img/avatar2.png') }}"/>
             </div>
             <div class="col-md-8">
                 <div class="username"> <p>Trophés de <b>{{ app.user.username }}</b></p></div>
                 <div class="succes">
                     <div class="col-md-12">
                         <div class="col-md-2">
-                        {% if profil.trajet10k1 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Thivars effectué</p> {% endif %}
+                            {% set compteur = 0 %}
+                        {% if profil.trajet10k1 == 1 %} {% set compteur = compteur + 1 %} <audio autoplay="autoplay">
+        <source src="{{ asset('item.mp3') }}" type="audio/mp3" />
+  Votre navigateur n'est pas compatible
+    </audio> <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Thivars effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet10k2 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Thivars effectué</p> {% endif %}
+                        {% if profil.trajet10k2 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Thivars effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet10k3 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Douy effectué</p> {% endif %}
+                        {% if profil.trajet10k3 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Douy effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet10k4 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Douy effectué</p> {% endif %}
+                        {% if profil.trajet10k4 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Douy effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet20k1 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Maintenon effectué</p> {% endif %}
+                        {% if profil.trajet20k1 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Maintenon effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet20k2 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Bonneval effectué</p> {% endif %}
+                        {% if profil.trajet20k2 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Bonneval effectué</p> {% endif %}
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="col-md-2">
-                        {% if profil.trajet20k3 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Maintenon effectué</p> {% endif %}
+                        {% if profil.trajet20k3 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Maintenon effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet20k4 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Maintenon effectué</p> {% endif %}
+                        {% if profil.trajet20k4 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Maintenon effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet30k1 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Beaugency effectué</p> {% endif %}
+                        {% if profil.trajet30k1 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Beaugency effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet30k2 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Illiers-Combray effectué</p> {% endif %}
+                        {% if profil.trajet30k2 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Illiers-Combray effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet30k3 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Beaugency effectué</p> {% endif %}
+                        {% if profil.trajet30k3 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Beaugency effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet30k4 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Illiers-Combray effectué</p> {% endif %}
+                        {% if profil.trajet30k4 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Illiers-Combray effectué</p> {% endif %}
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="col-md-2">
-                        {% if profil.trajet40k1 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Vendome effectué</p> {% endif %}
+                        {% if profil.trajet40k1 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Vendome effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet40k2 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Dreux effectué</p> {% endif %}
+                        {% if profil.trajet40k2 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Dreux effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet40k3 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Vendome effectué</p> {% endif %}
+                        {% if profil.trajet40k3 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chateaudun-Vendome effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet40k4 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Dreux effectué</p> {% endif %}
+                        {% if profil.trajet40k4 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Dreux effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet50k1 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Sully-sur-Loire effectué</p> {% endif %}
+                        {% if profil.trajet50k1 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Sully-sur-Loire effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet50k2 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Nouan-le-Fuselier effectué</p> {% endif %}
+                        {% if profil.trajet50k2 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Nouan-le-Fuselier effectué</p> {% endif %}
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="col-md-2">
-                        {% if profil.trajet50k3 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Sully-sur-Loire effectué</p> {% endif %}
+                        {% if profil.trajet50k3 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Sully-sur-Loire effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet50k4 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Nouan-le-Fuselier effectué</p> {% endif %}
+                        {% if profil.trajet50k4 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Nouan-le-Fuselier effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet60k1 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Blois effectué</p> {% endif %}
+                        {% if profil.trajet60k1 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Blois effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet60k2 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Cloye-sur-le-Loir effectué</p> {% endif %}
+                        {% if profil.trajet60k2 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Cloye-sur-le-Loir effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet60k3 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Blois effectué</p> {% endif %}
+                        {% if profil.trajet60k3 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Blois effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
-                        {% if profil.trajet60k4 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Cloye-sur-le-Loir effectué</p> {% endif %}
-                        </div>
+                        {% if profil.trajet60k4 == 1 %} {% set compteur = compteur + 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Orleans-Cloye-sur-le-Loir effectué</p> {% endif %}
+                        </div> 
+                        {% if compteur == 24 %}
+                            <p class="text-center"><img id="avatar" src="{{ asset ('img/success2.jpg') }}"/> </p>
+                            <h1 class="text-center">FÉLICITATION TU AS COMPLÉTER TOUS LES TREKS</h1>
+                        {% endif %}
+                      {#   {% if profil.trajet60k4 == 1 and profil.trajet60k3 == 1 and profil.trajet60k2 == 1 and profil.trajet60k1 == 1 and profil.trajet50k4 == 1 and profil.trajet50k3 == 1 and profil.trajet50k2 == 1 and profil.trajet50k1 == 1 and profil.trajet40k4 == 1 and profil.trajet40k3 == 1 and profil.trajet40k2 profil.trajet40k1 == 1 and profil.trajet30k4 == 1 and profil.trajet30k3 == 1 and profil.trajet30k2 == 1 and profil.trajet30k1 == 1 and profil.trajet20k4 == 1 and profil.trajet20k3 == 1 and profil.trajet20k2 == 1 and profil.trajet20k1 == 1 and profil.trajet10k4 == 1 and profil.trajet10k3 == 1 and profil.trajet10k2 == 1 and profil.trajet10k1 == 1 %} <p> BRAVO T'AS TOUT </p>
+                        {% endif %} #}
                     </div>
                 </div>
             </div>

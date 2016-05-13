@@ -10,7 +10,7 @@
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var maCarte = new google.maps.Map(document.getElementById("EmplacementDeMaCarte"), optionsCarte);
-        var urlKML = "http://www.petit-fichier.fr/2016/05/12/lol/lol.kml";
+        var urlKML = "http://www.petit-fichier.fr/2016/05/13/directions-from-chartres-to-thivars-kml-1/directions-from-chartres-to-thivars-kml.xml";
         var coucheKML = new google.maps.KmlLayer({
           map: maCarte,
           url: urlKML
@@ -27,7 +27,7 @@
   function initialize() {
     var mapOptions = {
       zoom: 11,
-      center: new google.maps.LatLng(47.13109,1.00867)
+      center: new google.maps.LatLng(48.44385,1.48901)
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);

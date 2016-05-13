@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}La Marche De l'Empereur!{% endblock %}</title>
+        <title>{% block title %}La marche de l'empereur{% endblock %}</title>
+        <link rel="icon" href="{{ asset('img/favicon.png') }}" >
         {% block stylesheets %}
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}" >
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" >
@@ -13,7 +14,6 @@
         <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
         {% endblock %}
-        <link rel="icon" type="image/x-icon" src="{{ asset('img/linux.png') }}"> />
     </head>
     <body>
         
