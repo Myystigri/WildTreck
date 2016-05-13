@@ -181,9 +181,17 @@ body {
 	background: -o-linear-gradient(#fff, #999);
 }
 .btn-inscription {
+<<<<<<< HEAD
 
+=======
+	margin-left: 100px;
+	display: flex;
+>>>>>>> 94092408fdc316f17b6ce52cddda07dc71f9dc2d
 	justify-content: space-around;
 	align-items: center;
+}
+.carre {
+	text-align: center;
 }
 }
 
