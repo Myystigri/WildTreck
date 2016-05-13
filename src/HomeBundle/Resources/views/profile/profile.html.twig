@@ -4,6 +4,8 @@
 
 
 {% block body %}
+
+      
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
@@ -14,7 +16,10 @@
                 <div class="succes">
                     <div class="col-md-12">
                         <div class="col-md-2">
-                        {% if profil.trajet10k1 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Thivars effectué</p> {% endif %}
+                        {% if profil.trajet10k1 == 1 %} <audio autoplay="autoplay">
+        <source src="{{ asset('item.mp3') }}" type="audio/mp3" />
+  Votre navigateur n'est pas compatible
+    </audio><img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Thivars effectué</p> {% endif %}
                         </div>
                         <div class="col-md-2">
                         {% if profil.trajet10k2 == 1 %} <img id="avatar" src="{{ asset ('img/success.png') }}"/><p>Trek Chartres-Thivars effectué</p> {% endif %}
