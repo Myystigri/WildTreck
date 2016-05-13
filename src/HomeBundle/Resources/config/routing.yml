@@ -2,6 +2,11 @@ home_homepage:
     path:     /
     defaults: { _controller: HomeBundle:Default:index }
 
+#DORIAN
+rando10k1:
+    path:     /rando10k1
+    defaults: { _controller: HomeBundle:Rando:rando10k1 }
+
 home_vue:
     path:     /vue
     defaults: { _controller: HomeBundle:Default:vue }

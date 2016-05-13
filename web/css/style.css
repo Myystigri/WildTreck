@@ -27,6 +27,7 @@ body {
 }
 
 
+
 			/* VUE  */
 
 
@@ -171,4 +172,29 @@ body {
 
 
 
+/* DORIAN */
+#EmplacementDeMaCarte{
+	height:300px;
+	margin-top: 100px;
+}
 
+#map-canvas{
+	height:300px;
+	margin-top: 50px;
+}
+
+html { 
+	height: 100%;
+}
+
+body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+}
+.grossimage {
+	margin-top:100px;
+}
+.description {
+	margin-top:50px;
+}
