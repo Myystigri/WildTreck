@@ -16,32 +16,36 @@
 			<div class="rando  col-md-6">
 				<a href="#openModal"><img src="{{ asset('img/velo.png') }}"></a>
 
-				<div id="openModal" class="modalmarche">
-					<div class="carre">
-						<a href="#close" title="Close" class="close">X</a>
-						<h2>Randonnées</h2>
-						<p><a href="{{ path('home_vue10') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 10kms </button></a></p>
-						<p><a href="{{ path('home_vue20') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 20kms </button></a></p>
-						<p><a href="{{ path('home_vue30') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 30kms </button></a></p>
-						<p><a href="{{ path('home_vue40') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 40kms </button></a></p>
-					</div>
-				</div>
-			</div>
+
+                <div id="openModal" class="modalvelo">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>Excursions Velos</h2>
+                        <p><a href="{{ path('home_vue30') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 30kms </button></a></p>
+                        <p><a href="{{ path('home_vue40') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 40kms </button></a></p>
+                        <p><a href="{{ path('home_vue50') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 50kms </button></a></p>
+                        <p><a href="{{ path('home_vue60') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 60kms </button></a></p>
+                    </div>
+                </div>
+            </div>
+
 
 			<div class="velo  col-md-6">
 				<a href="#openModal1"><img src="{{ asset('img/rando.png') }}"</a>
 
-				<div id="openModal1" class="modalvelo">
-					<div classe="carre">
-						<a href="#close" title="Close" class="close">X</a>
-						<h2>Excursions Velos</h2>
-						<p><a href="{{ path('home_vue30') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 30kms </button></a></p>
-						<p><a href="{{ path('home_vue40') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 40kms </button></a></p>
-						<p><a href="{{ path('home_vue50') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 50kms </button></a></p>
-						<p><a href="{{ path('home_vue60') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 60kms </button></a></p>
-					</div>
-				</div>
-			</div>
+
+                <div id="openModal1" class="modalmarche">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>Randonnées</h2>
+                        <p><a href="{{ path('home_vue10') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 10kms </button></a></p>
+                        <p><a href="{{ path('home_vue20') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 20kms </button></a></p>
+                        <p><a href="{{ path('home_vue30') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 30kms </button></a></p>
+                        <p><a href="{{ path('home_vue40') }}"><button type="button" name="button" class="btn btn-primary btn-inscription" >- de 40kms </button></a></p>
+                    </div>
+                </div>
+            </div>
+
 				<a href="{{ path('home_homepage') }}">test</a>
 		</div>
 	</div>
