@@ -20,7 +20,7 @@ class DefaultController extends Controller
     }
 
 
-    public function vueAction()
+    public function vue10Action()
     {
         return $this->render('HomeBundle:vue:vue10.html.twig');
     }
