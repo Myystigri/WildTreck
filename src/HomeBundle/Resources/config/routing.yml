@@ -26,7 +26,7 @@ home_vue50:
 
 home_profile:
     path:     /profile
-    defaults: { _controller: HomeBundle:Default:profile }
+    defaults: { _controller: HomeBundle:Default:showProfil }
 
 home_vue60:
     path:     /vue60
@@ -48,4 +48,52 @@ rando10k2:
 rando10k2vue:
     path:     /rando10k2
     defaults: { _controller: HomeBundle:Rando:rando10k2 }
+
+rando10k3:
+    path:     /rando10k3/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn10k3 }
+
+rando10k3vue:
+    path:     /rando10k3
+    defaults: { _controller: HomeBundle:Rando:rando10k3 }
+
+rando10k4:
+    path:     /rando10k4/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn10k4 }
+
+rando10k4vue:
+    path:     /rando10k4
+    defaults: { _controller: HomeBundle:Rando:rando10k4 }
+
+rando20k1:
+    path:     /rando20k1/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn20k1 }
+
+rando20k1vue:
+    path:     /rando20k1
+    defaults: { _controller: HomeBundle:Rando:rando20k1 }
+
+rando20k2:
+    path:     /rando20k2/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn20k2 }
+
+rando20k2vue:
+    path:     /rando20k2
+    defaults: { _controller: HomeBundle:Rando:rando20k2 }
+
+rando20k3:
+    path:     /rando20k3/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn20k3 }
+
+rando20k3vue:
+    path:     /rando20k3
+    defaults: { _controller: HomeBundle:Rando:rando20k3 }
+
+rando20k4:
+    path:     /rando20k4/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn20k4 }
+
+rando20k4vue:
+    path:     /rando20k4
+    defaults: { _controller: HomeBundle:Rando:rando20k4 }
 

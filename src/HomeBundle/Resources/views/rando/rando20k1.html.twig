@@ -3,14 +3,14 @@
 {% block navbar %}{% include ('navbar/navbar.html.twig') %}{% endblock %}
 
 {% block body %}
-  <script>
+	<script>
       function initialisation() {
         var optionsCarte = {
           zoom: 11,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var maCarte = new google.maps.Map(document.getElementById("EmplacementDeMaCarte"), optionsCarte);
-        var urlKML = "http://www.petit-fichier.fr/2016/05/13/directions-from-chartres-to-thivars-kml/directions-from-chartres-to-thivars-kml.xml";
+        var urlKML = "http://www.petit-fichier.fr/2016/05/13/directions-from-chartres-to-maintenon-kml/directions-from-chartres-to-maintenon-kml.xml";
         var coucheKML = new google.maps.KmlLayer({
           map: maCarte,
           url: urlKML
@@ -18,7 +18,7 @@
       }
       google.maps.event.addDomListener( window, 'load', initialisation );
     </script>
-  <script>
+	<script>
   var map;
   var geoJSON;
   var request;
@@ -151,21 +151,21 @@
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <div class="row">
-  <div class="col-md-5 col-md-offset-1 grossimage">
-    <img src="{{ asset('img/montagne.jpg') }}"/>
-  </div>
-  <div class="col-md-4 col-md-offset-1"id="EmplacementDeMaCarte">
-  </div>
+	<div class="col-md-5 col-md-offset-1 grossimage">
+		<img src="{{ asset('img/montagne.jpg') }}"/>
+	</div>
+	<div class="col-md-4 col-md-offset-1"id="EmplacementDeMaCarte">
+	</div>
 </div>
-  <div class="row">
-    <div class="description col-md-5 col-md-offset-1">
-      <p>Salut je suis une belle cathédrale tmtc sisi la famille lol on peut mettre une description enooooooooooooooooooooooorme ici mais j'ai juste la flemme de l'écrire allez salut</p>
-      <form method="post" action="{{ path ('rando10k2') }}">
-        <input class="btn btn-default" type="submit" value="Valider">
-      </form>
-    </div>
-     <div class="col-md-4 col-md-offset-1"id="map-canvas">
-     </div>
-  </div>
+	<div class="row">
+		<div class="description col-md-5 col-md-offset-1">
+			<p>Salut je suis une belle cathédrale tmtc sisi la famille lol on peut mettre une description enooooooooooooooooooooooorme ici mais j'ai juste la flemme de l'écrire allez salut</p>
+			<form method="post" action="{{ path ('rando20k1') }}">
+				<input class="btn btn-default" type="submit" value="Valider">
+			</form>
+		</div>
+		 <div class="col-md-4 col-md-offset-1"id="map-canvas">
+		 </div>
+	</div>
 
 {% endblock %}

@@ -7,7 +7,10 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use AppBundle\Entity\User;
+use TrajetBundle\Entity\Trajets;
 
 class DefaultController extends Controller
 {
@@ -43,8 +46,19 @@ class DefaultController extends Controller
     }
     
     
-    public function profileAction()
+    public function showProfilAction (Request $request)
     {
-        return $this->render('HomeBundle:profile:profile.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $user = $this -> getUser();
+        $userid = $user -> getId();
+        $repository = $this->getDoctrine()
+            ->getRepository('AppBundle:User');
+        $datauser = $repository->findOneById($userid);
+        $profil = $em->getRepository('TrajetBundle:Trajets')->findOneById_user($user->getId());
+        return $this->render('HomeBundle:profile:profile.html.twig', array(
+            'user'=>$user,
+            'datauser'=>$datauser,
+            'profil'=>$profil,
+        ));
     }
 }
