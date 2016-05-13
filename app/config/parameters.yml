@@ -4,11 +4,7 @@ parameters:
     database_port: null
     database_name: hackathon-g6
     database_user: root
-<<<<<<< HEAD
-    database_password: wv3
-=======
     database_password: dota4life
->>>>>>> f43286d1d8459853614d3b66728e33ac1e950ae1
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
