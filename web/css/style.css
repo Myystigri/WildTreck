@@ -181,7 +181,12 @@ body {
 	background: -o-linear-gradient(#fff, #999);
 }
 .btn-inscription {
+<<<<<<< HEAD
 	margin-left: 100px;
+=======
+
+	margin-left: 130px;
+>>>>>>> f43286d1d8459853614d3b66728e33ac1e950ae1
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
