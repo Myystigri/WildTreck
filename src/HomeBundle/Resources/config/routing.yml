@@ -123,4 +123,60 @@ rando50k1vue:
     path:     /rando50k1
     defaults: { _controller: HomeBundle:Rando:rando50k1 }
 
+rando50k2:
+    path:     /rando50k2/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn50k2 }
+
+rando50k2vue:
+    path:     /rando50k2
+    defaults: { _controller: HomeBundle:Rando:rando50k2 }
+
+rando50k3:
+    path:     /rando50k3/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn50k3 }
+
+rando50k3vue:
+    path:     /rando50k3
+    defaults: { _controller: HomeBundle:Rando:rando50k3 }
+
+rando50k4:
+    path:     /rando50k4/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn50k4 }
+
+rando50k4vue:
+    path:     /rando50k4
+    defaults: { _controller: HomeBundle:Rando:rando50k4 }
+
+rando60k1:
+    path:     /rando60k1/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn60k1 }
+
+rando60k1vue:
+    path:     /rando60k1
+    defaults: { _controller: HomeBundle:Rando:rando60k1 }
+
+rando60k2:
+    path:     /rando60k2/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn60k2 }
+
+rando60k2vue:
+    path:     /rando60k2
+    defaults: { _controller: HomeBundle:Rando:rando60k2 }
+
+rando60k3:
+    path:     /rando60k3/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn60k3 }
+
+rando60k3vue:
+    path:     /rando60k3
+    defaults: { _controller: HomeBundle:Rando:rando60k3 }
+
+rando60k4:
+    path:     /rando60k4/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn60k4 }
+
+rando60k4vue:
+    path:     /rando60k4
+    defaults: { _controller: HomeBundle:Rando:rando60k4 }
+
 
