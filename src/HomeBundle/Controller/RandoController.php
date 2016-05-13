@@ -298,7 +298,7 @@ class RandoController extends Controller
         $em->persist($isok);
         $em->flush();
 
-        $url = $this->generateUrl('rando30k1vue');
+        $url = $this->generateUrl('home_homepage');
         $response = new RedirectResponse($url);
         return $response;
 
