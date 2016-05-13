@@ -2,6 +2,27 @@ home_homepage:
     path:     /
     defaults: { _controller: HomeBundle:Default:index }
 
-home_vue:
-    path:     /vue
+home_vue10:
+    path:     /vue10
     defaults: { _controller: HomeBundle:Default:vue }
+
+home_vue20:
+    path:     /vue20
+    defaults: { _controller: HomeBundle:Default:vue20 }
+
+home_vue30:
+    path:     /vue30
+    defaults: { _controller: HomeBundle:Default:vue30 }
+
+
+home_vue40:
+    path:     /vue40
+    defaults: { _controller: HomeBundle:Default:vue40 }
+
+home_vue50:
+    path:     /vue50
+    defaults: { _controller: HomeBundle:Default:vue50 }
+
+home_vue60:
+    path:     /vue60
+    defaults: { _controller: HomeBundle:Default:vue60 }
