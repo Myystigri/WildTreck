@@ -188,6 +188,8 @@ body {
 }
 .btn-inscription {
 
+	margin-left: 100px;
+
 
 	margin-left: 100px;
 	display: flex;
@@ -203,7 +205,13 @@ body {
 
 #avatar {
     margin-top: 100px;
-    width: 100%;
+    width: 100px;
+    height:100px;	
+}
+.col-md-4 img {
+	height:250px;
+	width:250px;
+	margin-top: 50px;
 }
 
 .username {
@@ -248,5 +256,7 @@ body {
 .description {
 	margin-top:50px;
 }
+
+.succes {
 
 }
