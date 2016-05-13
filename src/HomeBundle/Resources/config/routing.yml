@@ -28,16 +28,12 @@ home_vue50:
     path:     /vue50
     defaults: { _controller: HomeBundle:Default:vue50 }
 
-<<<<<<< HEAD
-home_vue:
-    path:     /vue
-    defaults: { _controller: HomeBundle:Default:vue }
 
 home_profile:
     path:     /profile
     defaults: { _controller: HomeBundle:Default:profile }
-=======
+
 home_vue60:
     path:     /vue60
     defaults: { _controller: HomeBundle:Default:vue60 }
->>>>>>> cc8c01a5ac7865aa363986046fed7088e9eb6b40
+
