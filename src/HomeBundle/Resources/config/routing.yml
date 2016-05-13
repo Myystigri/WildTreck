@@ -6,10 +6,6 @@ home_vue10:
     path:     /vue10
     defaults: { _controller: HomeBundle:Default:vue10 }
 
-rando10k1vue:
-    path:     /rando10k1
-    defaults: { _controller: HomeBundle:Rando:rando10k1 }
-
 home_vue20:
     path:     /vue20
     defaults: { _controller: HomeBundle:Default:vue20 }
@@ -40,4 +36,16 @@ home_vue60:
 rando10k1:
     path:     /rando10k1/envoie
     defaults: {_controller: HomeBundle:Rando:modifybtn }
+
+rando10k1vue:
+    path:     /rando10k1
+    defaults: { _controller: HomeBundle:Rando:rando10k1 }
+
+rando10k2:
+    path:     /rando10k2/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn10k2 }
+
+rando10k2vue:
+    path:     /rando10k2
+    defaults: { _controller: HomeBundle:Rando:rando10k2 }
 
