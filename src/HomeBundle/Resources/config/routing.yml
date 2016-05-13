@@ -1,3 +1,9 @@
 home_homepage:
-    path:     /home
+    path:     /
     defaults: { _controller: HomeBundle:Default:index }
+
+#DORIAN
+rando10k1:
+    path:     /rando10k1
+    defaults: { _controller: HomeBundle:Rando:rando10k1 }
+
