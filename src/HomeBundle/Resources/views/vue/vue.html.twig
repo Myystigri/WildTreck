@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block navbar %}{% include ('navbar/navbar.html.twig') %}{% endblock %}
+
+
+{% block body %}
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 haut-gauche">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<p>blabla</p>
+					</div>
+					<div class="col-md-6 image-vue">
+						<img src="{{ asset('img/vue1.jpg') }}" alt="cathedrale" />
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 haut-droit">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<p>blabla</p>
+					</div>
+					<div class="col-md-6 image-vue">
+						<img src="{{ asset('img/vue1.jpg') }}" alt="cathedrale" />
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<div class="row">
+			<div class="col-md-6 bas-gauche">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<p>blabla</p>
+					</div>
+					<div class="col-md-6 image-vue">
+						<img src="{{ asset('img/vue1.jpg') }}" alt="cathedrale" />
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 bas-droit">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<p>blabla</p>
+					</div>
+					<div class="col-md-6 image-vue">
+						<img src="{{ asset('img/vue1.jpg') }}" alt="cathedrale" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+{% endblock %}
