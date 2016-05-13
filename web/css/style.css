@@ -15,56 +15,79 @@ body {
 .rando {
 	background-repeat: no-repeat;
 	height: 150px;
+	
+}
+.rando img {
+	border:solid white 3px;
 	margin-top: 300px;
-	margin-left: 200px;
+	margin-left: 300px;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 .velo {
 	background-repeat: no-repeat;
 	height: 150px;
+		
+}
+.velo img {
+	border:solid white 3px;
 	margin-top: 300px;
-	margin-right: 00px;
-	
+	margin-left: 200px;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 
 
 			/* VUE  */
+.montagne {
 
+}
 
 .haut-droit {
 	padding-top: 50px;
 	height: 50vh;
 	border:solid rgba(123,194,66,1) 1px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .haut-gauche {
 	padding-top: 50px;
 	height: 50vh;
 	border:solid rgba(123,194,66,1) 1px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .bas-gauche {
 	height: 50vh;
 	border:solid rgba(123,194,66,1) 1px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .bas-droit {
 	
 	height: 50vh;
 	border:solid rgba(123,194,66,1) 1px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .image-vue img {
 	height: 180px;
 	width: 306px;
-	border-radius: 10px;
+	border-radius: 5px;
 	float: left;
 	
 	
 }
 
+/*   LOGIN   */
 
+.log {
+	background: url(../img/velo.jpg);
+	background-position: center;
+	background-size: cover;
+	height:100vh;
+}
 
+/*   REGISTER   */
+
+.register-title {
+	margin-top: 50px;
+}
 
 /* Nico */
 
@@ -154,6 +177,13 @@ body {
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
+}
+.btn-inscription {
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 }
 
 /*page profile*/

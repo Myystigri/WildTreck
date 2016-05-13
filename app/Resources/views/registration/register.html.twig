@@ -3,6 +3,7 @@
 {% block navbar %}{% include ('navbar/navbar.html.twig') %}{% endblock %}
 
 {% block body %}
+<div class="container-fluid log">
 {% trans_default_domain 'FOSUserBundle' %}
 
 <div class="col-md-6 col-md-offset-3 register-div">
@@ -73,10 +74,10 @@
 
 	    <div class="col-md-12 register-but">
 	    	<div class="col-md-6 col-md-offset-6">
-	        	<input class="btn btn-register" type="submit" text-align right value="{{ 'registration.submit'|trans }}" />
+	        	<input class="btn btn-primary" type="submit" text-align right value="{{ 'registration.submit'|trans }}" />
 	    	</div>
 	    </div>
 	{{ form_end(form) }}
 </div>
-
+</div>
 {% endblock %}
