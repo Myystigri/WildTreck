@@ -49,6 +49,72 @@ rando10k2vue:
     path:     /rando10k2
     defaults: { _controller: HomeBundle:Rando:rando10k2 }
 
+
+rando30k1:
+    path:     /rando30k1/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn30k1 }
+
+rando30k1vue:
+    path:     /rando30k1
+    defaults: { _controller: HomeBundle:Rando:rando30k1 }
+
+rando30k2:
+    path:     /rando30k2/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn30k2 }
+
+rando30k2vue:
+    path:     /rando30k2
+    defaults: { _controller: HomeBundle:Rando:rando30k2 }
+
+rando30k3:
+    path:     /rando30k3/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn30k3 }
+
+rando30k3vue:
+    path:     /rando30k3
+    defaults: { _controller: HomeBundle:Rando:rando30k3 }
+
+rando30k4:
+    path:     /rando30k4/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn30k4 }
+
+rando30k4vue:
+    path:     /rando30k4
+    defaults: { _controller: HomeBundle:Rando:rando30k4 }
+
+rando40k1:
+    path:     /rando40k1/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn40k1 }
+
+rando40k1vue:
+    path:     /rando40k1
+    defaults: { _controller: HomeBundle:Rando:rando40k1 }
+
+rando40k2:
+    path:     /rando40k2/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn40k2 }
+
+rando40k2vue:
+    path:     /rando40k2
+    defaults: { _controller: HomeBundle:Rando:rando40k2 }
+
+rando40k3:
+    path:     /rando40k3/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn40k3 }
+
+rando40k3vue:
+    path:     /rando40k3
+    defaults: { _controller: HomeBundle:Rando:rando40k3 }
+
+rando40k4:
+    path:     /rando40k4/envoie
+    defaults: {_controller: HomeBundle:Rando:modifybtn40k4 }
+
+rando40k4vue:
+    path:     /rando40k4
+    defaults: { _controller: HomeBundle:Rando:rando40k4 }
+
+
 rando50k1:
     path:     /rando50k1/envoie
     defaults: {_controller: HomeBundle:Rando:modifybtn50k1 }
@@ -112,4 +178,5 @@ rando60k4:
 rando60k4vue:
     path:     /rando60k4
     defaults: { _controller: HomeBundle:Rando:rando60k4 }
+
 
