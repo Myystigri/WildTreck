@@ -5,3 +5,7 @@ home_homepage:
 home_vue:
     path:     /vue
     defaults: { _controller: HomeBundle:Default:vue }
+
+home_profile:
+    path:     /profile
+    defaults: { _controller: HomeBundle:Default:profile }

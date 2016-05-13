@@ -16,5 +16,10 @@ class DefaultController extends Controller
     {
         return $this->render('HomeBundle:vue:vue.html.twig');
     }
-
+    
+    
+    public function profileAction()
+    {
+        return $this->render('HomeBundle:profile:profile.html.twig');
+    }
 }

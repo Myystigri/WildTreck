@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block navbar %}{% include ('navbar/navbar.html.twig') %}{% endblock %}
+
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <img id="avatar" src="{{ asset ('img/avatar2.png') }}"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="username"> <p>{{ app.user.username }}</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
