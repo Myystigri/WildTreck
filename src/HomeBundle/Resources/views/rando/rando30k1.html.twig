@@ -160,9 +160,13 @@
     <div class="row">
         <div class="description col-md-5 col-md-offset-1">
             <p>Salut je suis une belle cathédrale tmtc sisi la famille lol on peut mettre une description enooooooooooooooooooooooorme ici mais j'ai juste la flemme de l'écrire allez salut</p>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
             <form method="post" action="{{ path ('rando30k1') }}">
                 <input class="btn btn-primary" type="submit" value="J'y vais">
             </form>
+            {% else %}
+            <a href="{{ path ('user_login') }}"><input class="btn btn-primary" value="Je m'inscris!"></a>
+        {% endif %}
         </div>
         <div class="col-md-4 col-md-offset-1"id="map-canvas">
         </div>
